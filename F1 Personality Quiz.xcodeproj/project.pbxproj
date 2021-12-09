@@ -1,0 +1,629 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		32768B932762B91B001B0524 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32768B922762B91B001B0524 /* AppDelegate.swift */; };
+		32768B952762B91B001B0524 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32768B942762B91B001B0524 /* SceneDelegate.swift */; };
+		32768B972762B91B001B0524 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32768B962762B91B001B0524 /* ViewController.swift */; };
+		32768B9A2762B91B001B0524 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32768B982762B91B001B0524 /* Main.storyboard */; };
+		32768B9C2762B91F001B0524 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32768B9B2762B91F001B0524 /* Assets.xcassets */; };
+		32768B9F2762B91F001B0524 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32768B9D2762B91F001B0524 /* LaunchScreen.storyboard */; };
+		32768BAA2762B91F001B0524 /* F1_Personality_QuizTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32768BA92762B91F001B0524 /* F1_Personality_QuizTests.swift */; };
+		32768BB42762B91F001B0524 /* F1_Personality_QuizUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32768BB32762B91F001B0524 /* F1_Personality_QuizUITests.swift */; };
+		32768BB62762B91F001B0524 /* F1_Personality_QuizUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32768BB52762B91F001B0524 /* F1_Personality_QuizUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		32768BA62762B91F001B0524 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 32768B872762B91B001B0524 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 32768B8E2762B91B001B0524;
+			remoteInfo = "F1 Personality Quiz";
+		};
+		32768BB02762B91F001B0524 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 32768B872762B91B001B0524 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 32768B8E2762B91B001B0524;
+			remoteInfo = "F1 Personality Quiz";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		32768B8F2762B91B001B0524 /* F1 Personality Quiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "F1 Personality Quiz.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		32768B922762B91B001B0524 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		32768B942762B91B001B0524 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		32768B962762B91B001B0524 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		32768B992762B91B001B0524 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		32768B9B2762B91F001B0524 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		32768B9E2762B91F001B0524 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		32768BA02762B91F001B0524 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32768BA52762B91F001B0524 /* F1 Personality QuizTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "F1 Personality QuizTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		32768BA92762B91F001B0524 /* F1_Personality_QuizTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = F1_Personality_QuizTests.swift; sourceTree = "<group>"; };
+		32768BAF2762B91F001B0524 /* F1 Personality QuizUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "F1 Personality QuizUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		32768BB32762B91F001B0524 /* F1_Personality_QuizUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = F1_Personality_QuizUITests.swift; sourceTree = "<group>"; };
+		32768BB52762B91F001B0524 /* F1_Personality_QuizUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = F1_Personality_QuizUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		32768B8C2762B91B001B0524 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32768BA22762B91F001B0524 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32768BAC2762B91F001B0524 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		32768B862762B91B001B0524 = {
+			isa = PBXGroup;
+			children = (
+				32768B912762B91B001B0524 /* F1 Personality Quiz */,
+				32768BA82762B91F001B0524 /* F1 Personality QuizTests */,
+				32768BB22762B91F001B0524 /* F1 Personality QuizUITests */,
+				32768B902762B91B001B0524 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		32768B902762B91B001B0524 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				32768B8F2762B91B001B0524 /* F1 Personality Quiz.app */,
+				32768BA52762B91F001B0524 /* F1 Personality QuizTests.xctest */,
+				32768BAF2762B91F001B0524 /* F1 Personality QuizUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		32768B912762B91B001B0524 /* F1 Personality Quiz */ = {
+			isa = PBXGroup;
+			children = (
+				32768B922762B91B001B0524 /* AppDelegate.swift */,
+				32768B942762B91B001B0524 /* SceneDelegate.swift */,
+				32768B962762B91B001B0524 /* ViewController.swift */,
+				32768B982762B91B001B0524 /* Main.storyboard */,
+				32768B9B2762B91F001B0524 /* Assets.xcassets */,
+				32768B9D2762B91F001B0524 /* LaunchScreen.storyboard */,
+				32768BA02762B91F001B0524 /* Info.plist */,
+			);
+			path = "F1 Personality Quiz";
+			sourceTree = "<group>";
+		};
+		32768BA82762B91F001B0524 /* F1 Personality QuizTests */ = {
+			isa = PBXGroup;
+			children = (
+				32768BA92762B91F001B0524 /* F1_Personality_QuizTests.swift */,
+			);
+			path = "F1 Personality QuizTests";
+			sourceTree = "<group>";
+		};
+		32768BB22762B91F001B0524 /* F1 Personality QuizUITests */ = {
+			isa = PBXGroup;
+			children = (
+				32768BB32762B91F001B0524 /* F1_Personality_QuizUITests.swift */,
+				32768BB52762B91F001B0524 /* F1_Personality_QuizUITestsLaunchTests.swift */,
+			);
+			path = "F1 Personality QuizUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		32768B8E2762B91B001B0524 /* F1 Personality Quiz */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32768BB92762B91F001B0524 /* Build configuration list for PBXNativeTarget "F1 Personality Quiz" */;
+			buildPhases = (
+				32768B8B2762B91B001B0524 /* Sources */,
+				32768B8C2762B91B001B0524 /* Frameworks */,
+				32768B8D2762B91B001B0524 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "F1 Personality Quiz";
+			productName = "F1 Personality Quiz";
+			productReference = 32768B8F2762B91B001B0524 /* F1 Personality Quiz.app */;
+			productType = "com.apple.product-type.application";
+		};
+		32768BA42762B91F001B0524 /* F1 Personality QuizTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32768BBC2762B91F001B0524 /* Build configuration list for PBXNativeTarget "F1 Personality QuizTests" */;
+			buildPhases = (
+				32768BA12762B91F001B0524 /* Sources */,
+				32768BA22762B91F001B0524 /* Frameworks */,
+				32768BA32762B91F001B0524 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				32768BA72762B91F001B0524 /* PBXTargetDependency */,
+			);
+			name = "F1 Personality QuizTests";
+			productName = "F1 Personality QuizTests";
+			productReference = 32768BA52762B91F001B0524 /* F1 Personality QuizTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		32768BAE2762B91F001B0524 /* F1 Personality QuizUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32768BBF2762B91F001B0524 /* Build configuration list for PBXNativeTarget "F1 Personality QuizUITests" */;
+			buildPhases = (
+				32768BAB2762B91F001B0524 /* Sources */,
+				32768BAC2762B91F001B0524 /* Frameworks */,
+				32768BAD2762B91F001B0524 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				32768BB12762B91F001B0524 /* PBXTargetDependency */,
+			);
+			name = "F1 Personality QuizUITests";
+			productName = "F1 Personality QuizUITests";
+			productReference = 32768BAF2762B91F001B0524 /* F1 Personality QuizUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		32768B872762B91B001B0524 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					32768B8E2762B91B001B0524 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					32768BA42762B91F001B0524 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 32768B8E2762B91B001B0524;
+					};
+					32768BAE2762B91F001B0524 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 32768B8E2762B91B001B0524;
+					};
+				};
+			};
+			buildConfigurationList = 32768B8A2762B91B001B0524 /* Build configuration list for PBXProject "F1 Personality Quiz" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 32768B862762B91B001B0524;
+			productRefGroup = 32768B902762B91B001B0524 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				32768B8E2762B91B001B0524 /* F1 Personality Quiz */,
+				32768BA42762B91F001B0524 /* F1 Personality QuizTests */,
+				32768BAE2762B91F001B0524 /* F1 Personality QuizUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		32768B8D2762B91B001B0524 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32768B9F2762B91F001B0524 /* LaunchScreen.storyboard in Resources */,
+				32768B9C2762B91F001B0524 /* Assets.xcassets in Resources */,
+				32768B9A2762B91B001B0524 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32768BA32762B91F001B0524 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32768BAD2762B91F001B0524 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		32768B8B2762B91B001B0524 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32768B972762B91B001B0524 /* ViewController.swift in Sources */,
+				32768B932762B91B001B0524 /* AppDelegate.swift in Sources */,
+				32768B952762B91B001B0524 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32768BA12762B91F001B0524 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32768BAA2762B91F001B0524 /* F1_Personality_QuizTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32768BAB2762B91F001B0524 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32768BB42762B91F001B0524 /* F1_Personality_QuizUITests.swift in Sources */,
+				32768BB62762B91F001B0524 /* F1_Personality_QuizUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		32768BA72762B91F001B0524 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 32768B8E2762B91B001B0524 /* F1 Personality Quiz */;
+			targetProxy = 32768BA62762B91F001B0524 /* PBXContainerItemProxy */;
+		};
+		32768BB12762B91F001B0524 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 32768B8E2762B91B001B0524 /* F1 Personality Quiz */;
+			targetProxy = 32768BB02762B91F001B0524 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		32768B982762B91B001B0524 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				32768B992762B91B001B0524 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		32768B9D2762B91F001B0524 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				32768B9E2762B91F001B0524 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		32768BB72762B91F001B0524 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		32768BB82762B91F001B0524 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		32768BBA2762B91F001B0524 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4C659Q7DFM;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "F1 Personality Quiz/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "AdamByron.F1-Personality-Quiz";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		32768BBB2762B91F001B0524 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4C659Q7DFM;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "F1 Personality Quiz/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "AdamByron.F1-Personality-Quiz";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		32768BBD2762B91F001B0524 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4C659Q7DFM;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "AdamByron.F1-Personality-QuizTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/F1 Personality Quiz.app/F1 Personality Quiz";
+			};
+			name = Debug;
+		};
+		32768BBE2762B91F001B0524 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4C659Q7DFM;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "AdamByron.F1-Personality-QuizTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/F1 Personality Quiz.app/F1 Personality Quiz";
+			};
+			name = Release;
+		};
+		32768BC02762B91F001B0524 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4C659Q7DFM;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "AdamByron.F1-Personality-QuizUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "F1 Personality Quiz";
+			};
+			name = Debug;
+		};
+		32768BC12762B91F001B0524 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4C659Q7DFM;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "AdamByron.F1-Personality-QuizUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "F1 Personality Quiz";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		32768B8A2762B91B001B0524 /* Build configuration list for PBXProject "F1 Personality Quiz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32768BB72762B91F001B0524 /* Debug */,
+				32768BB82762B91F001B0524 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32768BB92762B91F001B0524 /* Build configuration list for PBXNativeTarget "F1 Personality Quiz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32768BBA2762B91F001B0524 /* Debug */,
+				32768BBB2762B91F001B0524 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32768BBC2762B91F001B0524 /* Build configuration list for PBXNativeTarget "F1 Personality QuizTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32768BBD2762B91F001B0524 /* Debug */,
+				32768BBE2762B91F001B0524 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32768BBF2762B91F001B0524 /* Build configuration list for PBXNativeTarget "F1 Personality QuizUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32768BC02762B91F001B0524 /* Debug */,
+				32768BC12762B91F001B0524 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 32768B872762B91B001B0524 /* Project object */;
+}
