@@ -333,7 +333,7 @@
         <!--Results-->
         <scene sceneID="Fkr-xJ-3S3">
             <objects>
-                <viewController title="Results" id="Eux-Ud-zIa" sceneMemberID="viewController">
+                <viewController title="Results" id="Eux-Ud-zIa" customClass="ResultsViewController" customModule="F1_Personality_Quiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mXG-Qy-cZA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -379,10 +379,19 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Results" id="SPc-LE-Ea9">
-                        <barButtonItem key="rightBarButtonItem" title="Done" id="PN6-Ux-drR"/>
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="PN6-Ux-drR">
+                            <connections>
+                                <segue destination="hHf-2p-Dhz" kind="unwind" unwindAction="unwindToQuizIntroductionWithSegue:" id="3nh-w1-RcF"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="resultAnswerLabel" destination="u1I-EU-bGT" id="Ik7-0W-PLI"/>
+                        <outlet property="resultDefinitionLabel" destination="AcQ-tO-Yn6" id="XcA-1n-9hH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OaH-23-Psq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="hHf-2p-Dhz" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2347.826086956522" y="85.714285714285708"/>
         </scene>

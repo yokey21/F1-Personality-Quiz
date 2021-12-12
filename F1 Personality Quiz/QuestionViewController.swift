@@ -7,8 +7,7 @@
 
 import UIKit
 
-var questionIndex = 0
-var answersChosen: [Answer] = []
+
 
 class QuestionViewController: UIViewController {
 
@@ -53,6 +52,7 @@ class QuestionViewController: UIViewController {
                 answersChosen.append(currentAnswers[3])
             default:
                 break
+            
         }
         nextQuestion()
     }
@@ -83,34 +83,35 @@ class QuestionViewController: UIViewController {
         nextQuestion()
     }
     
+    var questionIndex = 0
+    var answersChosen: [Answer] = []
+    
     var questions: [Question] = [
         Question(text: "Which food do you like the most?",
                  type:.single,
                  answers: [
-                    Answer(text: "Steak", driver: .dog),
-                    Answer(text: "Fish", driver: .cat),
-                    Answer(text: "Carrots", driver: .rabbit),
-                    Answer(text: "Corn", driver: .turtle)
+                    Answer(text: "Steak", type: .dog),
+                    Answer(text: "Fish", type: .cat),
+                    Answer(text: "Carrots", type: .rabbit),
+                    Answer(text: "Corn", type: .turtle)
                           ]),
         
         Question(text: "Which activities do you enjoy?",
                  type: .multiple,
                  answers: [
-                    Answer(text: "Swimming", driver: .turtle),
-                    Answer(text: "Sleeping", driver: .cat),
-                    Answer(text: "Cuddling", driver: .rabbit),
-                    Answer(text: "Eating", driver: .dog)
+                    Answer(text: "Swimming", type: .turtle),
+                    Answer(text: "Sleeping", type: .cat),
+                    Answer(text: "Cuddling", type: .rabbit),
+                    Answer(text: "Eating", type: .dog)
                           ]),
         
         Question(text: "How much do you enjoy car rides?",
                  type: .ranged,
                  answers: [
-                    Answer(text: "I dislike them", driver: .cat),
-                    Answer(text: "I get a little nervous",
-                           driver: .rabbit),
-                    Answer(text: "I barely notice them",
-                           driver: .turtle),
-                    Answer(text: "I love them", driver: .dog)
+                    Answer(text: "I dislike them", type: .cat),
+                    Answer(text: "I get a little nervous", type: .rabbit),
+                    Answer(text: "I barely notice them", type: .turtle),
+                    Answer(text: "I love them", type: .dog)
         ])
     ]
 
@@ -118,6 +119,13 @@ class QuestionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         updateUI()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ResultsSegue" {
+            let resultsViewController = segue.destination as! ResultsViewController
+            resultsViewController.responses = answersChosen
+        }
     }
     
     func updateUI() {
@@ -135,11 +143,11 @@ class QuestionViewController: UIViewController {
         
         switch currentQuestion.type {
             case .single:
-                singleStackView.isHidden = false
+                updateSingleStack(using: currentAnswers)
             case .multiple:
-                multipleStackView.isHidden = false
+                updateMultipleStack(using: currentAnswers)
             case .ranged:
-                rangedStackView.isHidden = false
+                updateRangedStack(using: currentAnswers)
         }
     }
     
@@ -158,9 +166,9 @@ class QuestionViewController: UIViewController {
         multiSwitch3.isOn = false
         multiSwitch4.isOn = false
         multipleButton1.setTitle(answers[0].text, for: .normal)
-        multipleButton2.setTitle(answers[0].text, for: .normal)
-        multipleButton3.setTitle(answers[0].text, for: .normal)
-        multipleButton4.setTitle(answers[0].text, for: .normal)
+        multipleButton2.setTitle(answers[1].text, for: .normal)
+        multipleButton3.setTitle(answers[2].text, for: .normal)
+        multipleButton4.setTitle(answers[3].text, for: .normal)
         
     }
     

@@ -20,7 +20,7 @@ enum ResponseType {
 //text - description
 struct Answer {
     var text: String
-    var driver: Driver
+    var type: Driver
 }
 
 
