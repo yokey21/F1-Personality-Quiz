@@ -40,6 +40,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Start Quiz">
                                             <fontDescription key="titleFontDescription" name="Formula1-Display-Regular" family="Formula1" pointSize="12"/>
+                                            <color key="baseBackgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </buttonConfiguration>
                                         <connections>
                                             <segue destination="cR0-6E-Z63" kind="presentation" modalPresentationStyle="fullScreen" id="wBd-d7-LKQ"/>
@@ -65,7 +66,7 @@
         <!--Question/Answer Screen-->
         <scene sceneID="w6a-sB-Jbl">
             <objects>
-                <viewController title="Question/Answer Screen" id="J8I-xT-4pK" sceneMemberID="viewController">
+                <viewController title="Question/Answer Screen" id="J8I-xT-4pK" customClass="QuestionViewController" customModule="F1_Personality_Quiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SJk-Xm-g5C">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -80,13 +81,13 @@
                                         <rect key="frame" x="0.0" y="60" width="374" height="17"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vVA-EG-N9y">
-                                                <rect key="frame" x="0.0" y="0.0" width="301.5" height="17"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="52.5" height="17"/>
                                                 <fontDescription key="fontDescription" name="Formula1-Display-Regular" family="Formula1" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vbc-Ts-xWG">
-                                                <rect key="frame" x="321.5" y="0.0" width="52.5" height="17"/>
+                                                <rect key="frame" x="72.5" y="0.0" width="301.5" height="17"/>
                                                 <fontDescription key="fontDescription" name="Formula1-Display-Regular" family="Formula1" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -96,31 +97,36 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="QHr-He-iCP">
                                         <rect key="frame" x="0.0" y="107" width="374" height="40"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="1qR-hS-FvD">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P75-mJ-1Fz">
                                                 <rect key="frame" x="0.0" y="0.0" width="374" height="40"/>
-                                                <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P75-mJ-1Fz">
-                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="40"/>
-                                                        <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="40" id="uo2-7b-mNs"/>
-                                                        </constraints>
-                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="Submit">
-                                                            <fontDescription key="titleFontDescription" name="Formula1-Display-Regular" family="Formula1" pointSize="12"/>
-                                                        </buttonConfiguration>
-                                                    </button>
-                                                </subviews>
-                                            </stackView>
+                                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="uo2-7b-mNs"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Submit">
+                                                    <fontDescription key="titleFontDescription" name="Formula1-Display-Regular" family="Formula1" pointSize="12"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="rangedAnswerButtonPressed:" destination="J8I-xT-4pK" eventType="touchUpInside" id="pGf-d4-EoH"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OYH-QU-rYV">
-                                <rect key="frame" x="0.0" y="108" width="414" height="22"/>
-                                <fontDescription key="fontDescription" name="Formula1-Display-Regular" family="Formula1" pointSize="22"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OYH-QU-rYV">
+                                <rect key="frame" x="0.0" y="108" width="414" height="105"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Label">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="22" name="Formula1-Display-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="3" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="nv2-9k-ZQ6">
@@ -136,6 +142,9 @@
                                         <buttonConfiguration key="configuration" style="plain" title="Button">
                                             <fontDescription key="titleFontDescription" name="Formula1-Display-Regular" family="Formula1" pointSize="24"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="J8I-xT-4pK" eventType="touchUpInside" id="lmy-kh-Gd9"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ubk-UY-k9u">
                                         <rect key="frame" x="0.0" y="58.5" width="374" height="38.5"/>
@@ -144,6 +153,9 @@
                                         <buttonConfiguration key="configuration" style="plain" title="Button">
                                             <fontDescription key="titleFontDescription" name="Formula1-Display-Regular" family="Formula1" pointSize="24"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="J8I-xT-4pK" eventType="touchUpInside" id="AcH-Lf-yxs"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H65-NT-1e1">
                                         <rect key="frame" x="0.0" y="117" width="374" height="38.5"/>
@@ -152,6 +164,9 @@
                                         <buttonConfiguration key="configuration" style="plain" title="Button">
                                             <fontDescription key="titleFontDescription" name="Formula1-Display-Regular" family="Formula1" pointSize="24"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="J8I-xT-4pK" eventType="touchUpInside" id="b4u-9C-mQv"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="obU-2v-3Xx">
                                         <rect key="frame" x="0.0" y="175.5" width="374" height="38.5"/>
@@ -160,10 +175,13 @@
                                         <buttonConfiguration key="configuration" style="plain" title="Button">
                                             <fontDescription key="titleFontDescription" name="Formula1-Display-Regular" family="Formula1" pointSize="24"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="J8I-xT-4pK" eventType="touchUpInside" id="hss-VR-dry"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="2Fp-9A-LhW">
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="2Fp-9A-LhW">
                                 <rect key="frame" x="20" y="314" width="374" height="264"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="3o6-uO-qEH">
@@ -242,12 +260,16 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="7mV-dJ-oy1"/>
                                                 </constraints>
-                                                <color key="tintColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="tintColor" systemColor="systemRedColor"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Submit">
                                                     <fontDescription key="titleFontDescription" name="Formula1-Display-Regular" family="Formula1" pointSize="12"/>
+                                                    <color key="baseBackgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="multipleAnswerButtonPressed" destination="J8I-xT-4pK" eventType="touchUpInside" id="mZ3-Ah-2Zc"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -278,15 +300,29 @@
                             <constraint firstItem="V2U-Jj-DCS" firstAttribute="centerY" secondItem="SJk-Xm-g5C" secondAttribute="centerY" id="pPq-0U-3Yj"/>
                             <constraint firstItem="2Fp-9A-LhW" firstAttribute="centerY" secondItem="SJk-Xm-g5C" secondAttribute="centerY" id="pxA-Eb-yqW"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="V2U-Jj-DCS"/>
-                                <exclude reference="2Fp-9A-LhW"/>
-                            </mask>
-                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="f35-aR-Ukd"/>
                     <connections>
+                        <outlet property="multiSwitch1" destination="ODj-Bq-03Z" id="3Gg-y1-ieF"/>
+                        <outlet property="multiSwitch2" destination="q2o-yt-gPM" id="UQW-zv-kI1"/>
+                        <outlet property="multiSwitch3" destination="PGa-TJ-Y9n" id="VAg-JU-Rqi"/>
+                        <outlet property="multiSwitch4" destination="RSu-mj-L9k" id="JfO-a8-tUO"/>
+                        <outlet property="multipleButton1" destination="a2O-hs-Trw" id="A2K-W0-EkC"/>
+                        <outlet property="multipleButton2" destination="O3r-lN-JYO" id="S2l-33-S4j"/>
+                        <outlet property="multipleButton3" destination="ioj-FU-FYj" id="WXj-Ja-vLD"/>
+                        <outlet property="multipleButton4" destination="NCq-0u-ePe" id="qmG-9A-iQP"/>
+                        <outlet property="multipleStackView" destination="2Fp-9A-LhW" id="7Ak-6M-aI4"/>
+                        <outlet property="progressView" destination="nv2-9k-ZQ6" id="PqL-L4-IvX"/>
+                        <outlet property="questionLabel" destination="OYH-QU-rYV" id="zze-Ls-h3u"/>
+                        <outlet property="rangedLabel1" destination="vVA-EG-N9y" id="ItT-go-dp3"/>
+                        <outlet property="rangedLabel2" destination="Vbc-Ts-xWG" id="WBs-7U-0VU"/>
+                        <outlet property="rangedSlider" destination="las-LD-3aI" id="QgF-Zf-eQM"/>
+                        <outlet property="rangedStackView" destination="V2U-Jj-DCS" id="olN-s9-fKq"/>
+                        <outlet property="singleButton1" destination="FT6-1X-76M" id="QI4-e3-asr"/>
+                        <outlet property="singleButton2" destination="Ubk-UY-k9u" id="7kj-T6-8IA"/>
+                        <outlet property="singleButton3" destination="H65-NT-1e1" id="D7X-hb-CfK"/>
+                        <outlet property="singleButton4" destination="obU-2v-3Xx" id="79r-WG-Rzi"/>
+                        <outlet property="singleStackView" destination="eLJ-gB-aKM" id="H1P-II-Qgh"/>
                         <segue destination="Eux-Ud-zIa" kind="show" identifier="ResultsSegue" id="CFd-IY-nKH"/>
                     </connections>
                 </viewController>

@@ -3,4 +3,114 @@
    uuid = "76F9127F-2D41-496C-98A5-7AB745706FDA"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "45933E9C-5F6B-4238-A412-5597224D0D4F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "F1 Personality Quiz/QuestionViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "QuestionViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "45933E9C-5F6B-4238-A412-5597224D0D4F - 84912fd64161d56d"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "F1_Personality_Quiz.QuestionViewController.rangedStackView.getter : Swift.Optional&lt;__C.UIStackView&gt;"
+                  moduleName = "F1 Personality Quiz"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/abyron/Documents/GitHub/F1%20Personality%20Quiz/F1%20Personality%20Quiz/QuestionViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "45933E9C-5F6B-4238-A412-5597224D0D4F - 2eab8e09506871f9"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "F1_Personality_Quiz.QuestionViewController.rangedStackView.setter : Swift.Optional&lt;__C.UIStackView&gt;"
+                  moduleName = "F1 Personality Quiz"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/abyron/Documents/GitHub/F1%20Personality%20Quiz/F1%20Personality%20Quiz/QuestionViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "108">
+               </Location>
+               <Location
+                  uuid = "45933E9C-5F6B-4238-A412-5597224D0D4F - 1b396233f2720a14"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "F1_Personality_Quiz.QuestionViewController.rangedStackView.modify : Swift.Optional&lt;__C.UIStackView&gt;"
+                  moduleName = "F1 Personality Quiz"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/abyron/Documents/GitHub/F1%20Personality%20Quiz/F1%20Personality%20Quiz/QuestionViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  uuid = "45933E9C-5F6B-4238-A412-5597224D0D4F - 4b9f1f7f503c0c99"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "F1_Personality_Quiz.QuestionViewController.rangedStackView.modify : Swift.Optional&lt;__C.UIStackView&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "F1 Personality Quiz"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/abyron/Documents/GitHub/F1%20Personality%20Quiz/F1%20Personality%20Quiz/QuestionViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "45933E9C-5F6B-4238-A412-5597224D0D4F - 1bee663fc5ec7fc"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "F1_Personality_Quiz.QuestionViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; F1_Personality_Quiz.QuestionViewController"
+                  moduleName = "F1 Personality Quiz"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/abyron/Documents/GitHub/F1%20Personality%20Quiz/F1%20Personality%20Quiz/QuestionViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "232">
+               </Location>
+               <Location
+                  uuid = "45933E9C-5F6B-4238-A412-5597224D0D4F - a78a7cba9cae4679"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "F1_Personality_Quiz.QuestionViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;F1_Personality_Quiz.QuestionViewController&gt;"
+                  moduleName = "F1 Personality Quiz"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/abyron/Documents/GitHub/F1%20Personality%20Quiz/F1%20Personality%20Quiz/QuestionViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "208">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
