@@ -25,7 +25,7 @@ class ResultsViewController: UIViewController {
     }
     
     func calculatePesonalityResult() {
-        var frequencyOfAnswers: [Driver: Int] = [:]
+        var frequencyOfAnswers: [Person: Int] = [:]
         let responseTypes = responses.map { $0.type }
         
         for response in responseTypes {

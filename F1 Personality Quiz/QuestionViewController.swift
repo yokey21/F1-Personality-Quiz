@@ -87,31 +87,40 @@ class QuestionViewController: UIViewController {
     var answersChosen: [Answer] = []
     
     var questions: [Question] = [
-        Question(text: "Which food do you like the most?",
+        Question(text: "How would you react to one of your drivers crashing out the race?",
                  type:.single,
                  answers: [
-                    Answer(text: "Steak", type: .dog),
-                    Answer(text: "Fish", type: .cat),
-                    Answer(text: "Carrots", type: .rabbit),
-                    Answer(text: "Corn", type: .turtle)
+                    Answer(text: "Keep to yourself", type: .binotto),
+                    Answer(text: "Slam your fist into your desk, smashing it completely", type: .wolff),
+                    Answer(text: "Begin swearing perfusly", type: .steiner),
+                    Answer(text: "Complain on the radio to the race director", type: .horner)
                           ]),
         
-        Question(text: "Which activities do you enjoy?",
+        Question(text: "Which of these characteristics describe you?",
                  type: .multiple,
                  answers: [
-                    Answer(text: "Swimming", type: .turtle),
-                    Answer(text: "Sleeping", type: .cat),
-                    Answer(text: "Cuddling", type: .rabbit),
-                    Answer(text: "Eating", type: .dog)
+                    Answer(text: "Approachable", type: .horner),
+                    Answer(text: "Confident", type: .wolff),
+                    Answer(text: "Reserved", type: .binotto),
+                    Answer(text: "Agressive", type: .steiner)
                           ]),
         
-        Question(text: "How much do you enjoy car rides?",
+        Question(text: "A rival team principle calls one of your drivers dangerous, how do you react?",
+                 type:.single,
+                 answers: [
+                    Answer(text: "Ignore the comment and avoid the media", type: .binotto),
+                    Answer(text: "Brush it off and give them a back-handed compiliment.", type: .wolff),
+                    Answer(text: "Agree with them", type: .steiner),
+                    Answer(text: "Acknowledge the remark and spin it as a postive.", type: .horner)
+                          ]),
+        
+        Question(text: "Are you a fun or serious leader?",
                  type: .ranged,
                  answers: [
-                    Answer(text: "I dislike them", type: .cat),
-                    Answer(text: "I get a little nervous", type: .rabbit),
-                    Answer(text: "I barely notice them", type: .turtle),
-                    Answer(text: "I love them", type: .dog)
+                    Answer(text: "Serious", type: .binotto),
+                    Answer(text: "", type: .steiner),
+                    Answer(text: "", type: .wolff),
+                    Answer(text: "Fun", type: .horner)
         ])
     ]
 
