@@ -142,6 +142,7 @@ class QuestionViewController: UIViewController {
         multipleStackView.isHidden = true
         rangedStackView.isHidden = true
         
+        
         let currentQuestion = questions[questionIndex]
         let currentAnswers = currentQuestion.answers
         let totalProgress = Float(questionIndex)/Float(questions.count)

@@ -15,6 +15,8 @@ class ResultsViewController: UIViewController {
     
     @IBOutlet weak var resultDefinitionLabel: UILabel!
     
+    @IBOutlet var resultImage: UIImageView!
+    
     var responses: [Answer]!
     
     override func viewDidLoad() {
@@ -40,7 +42,10 @@ class ResultsViewController: UIViewController {
         let mostCommonAnswer = frequentAnswersSorted.first!.key
         
         resultAnswerLabel.text = "You are a \(mostCommonAnswer.rawValue)!"
-        resultDefinitionLabel.text = mostCommonAnswer.definition
+        //resultDefinitionLabel.text = mostCommonAnswer.definition
+        
+        resultImage.image = UIImage(named: "\(mostCommonAnswer).jpg")
+        
     }
 
     /*
